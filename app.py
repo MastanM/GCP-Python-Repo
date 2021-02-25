@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    html = "<!DOCTYPE html>
+    html = '''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@ def hello():
     <h3>Welcome to Cloud4C !! CICD Automation with Google Cloud Native Tools !!</h3>
    
 </body>
-</html>"
+</html>'''
     return html
 
 if __name__ == "__main__":
